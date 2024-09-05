@@ -1,0 +1,59 @@
+{
+  "name": "@mielo-ui/mielo-theme-boilerplate",
+  "version": "1.0.6",
+  "description": "Mielo UI - custom theme library boilerplate",
+  "main": "sass/themed.bundle.scss",
+  "unpkg": "css/themed.bundle.css",
+  "style": "css/themed.bundle.min.css",
+  "author": {
+    "name": "Anton Shramko",
+    "email": "antonshramko@yandex.ru"
+  },
+  "homepage": "https://mielo-ui.github.io",
+  "repository": {
+    "url": "https://github.com/mielo-ui/mielo-theme-boilerplate"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mielo-ui/mielo-theme-boilerplate/issues"
+  },
+  "keywords": [
+    "gnome",
+    "adwaita",
+    "web",
+    "mielo.ui",
+    "css",
+    "sass",
+    "scss",
+    "flexbox",
+    "grid",
+    "responsive",
+    "framework"
+  ],
+  "files": [
+    "css",
+    "sass",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "pretty": "prettier 'sass/**/*.{scss,css}' --write",
+    "lint": "stylelint 'sass/**/*.scss' --fix",
+    "fmt": "npm run pretty && npm run lint",
+    "build": "./build.sh"
+  },
+  "dependencies": {
+    "@mielo-ui/mielo": "^1.0.6"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "cssnano": "^7.0.4",
+    "postcss-cli": "^11.0.0",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "sass": "^1.77.8",
+    "stylelint": "^16.7.0",
+    "stylelint-scss": "^6.4.1"
+  }
+}
